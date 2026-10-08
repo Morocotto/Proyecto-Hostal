@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostal Capital</title>
 </head>
+
 <body>
+
     <!--Encabezado de inicio, nombre y links a otras pestañas de la pagina-->
     <div>
         <h1>Hostal Capital</h1>
-        <a href="#">Habitaciones</a>
+        <a href="pagina-habitaciones/habitaciones.html">Habitaciones</a>
         <a href="#">Servicios</a>
     </div>
+
     <!--Fachada del hostal-->
     <div>
         <h2>Imagenes referenciales</h2>
-        <img src="img-fachada/Fachada_1.jpg" alt="Imagen de la fachada 1 del hostal capital">
-        <img src="img-fachada/Fachada_2.jpg" alt="Imagen de la fachada 2 del hostal capital">
-        <img src="img-fachada/Fachada_3.jpg" alt="Imagen de la fachada 3 del hostal capital">
+        <img src="img-fachada/Fachada_1.jpg" alt="Imagen de la fachada 1 del hostal capital" width="700" height="500">
+        <img src="img-fachada/Fachada_2.jpg" alt="Imagen de la fachada 2 del hostal capital" width="700" height="500">
+        <img src="img-fachada/Fachada_3.jpg" alt="Imagen de la fachada 3 del hostal capital" width="700" height="500">
     </div>
+
     <!--Descripcion del hostal con saludo-->
     <div>
         <h3>Bienvenidos a nuestro Hostal</h3>
@@ -29,5 +34,95 @@
             No somos un hotel de lujos, pero sí nos esmeramos cada día por ofrecerte un servicio honesto y de buena
             calidad. Creemos que lo más importante es hacerte sentir como en casa.</p>
     </div>
+
+
+    <!-- Div para el formulario -->
+    <div>
+        <!-- La etiqueta form debe envolver los campos -->
+        <form action="#" method="POST">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <!-- El encabezado va dentro de un tr -->
+                        <th colspan="2">Formulario de Contacto</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- tr envuelve a td -->
+                        <td colspan="2">
+                            <label for="Nombres">Nombres y Apellidos</label><br>
+                            <input type="text" id="Nombres" name="nombres">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="Telefono">Teléfono</label><br>
+                            <input type="tel" id="Telefono" name="telefono">
+                        </td>
+                        <td>
+                            <label for="Email">Email</label><br>
+                            <input type="email" id="Email" name="email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="mensaje">Escribe tu mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <!--Footer, contenedor de pie de pagina-->
+    <footer>
+
+        <br>
+        <!--Div para la imagen-->
+        <div>
+            <img src="img-fachada/Logo.jpeg" alt="Logo del Hostal Capital" height="100" width="100">
+        </div>
+
+        <!--Div para la frase del Hostal-->
+        <div>
+            <p>Un lugar sencillo para descansar, sentirse cómodo y estar como en casa.</p>
+        </div>
+
+        <!--Div para los links-->
+        <div>
+            <a href="index.html">Home</a>
+           <a href="pagina-habitaciones/habitaciones.html">Habitaciones</a>
+            <a href="#">Servicios</a>
+        </div>
+
+        <!--Div para links de informcion de contacto-->
+        <div>
+            <ul>
+                <li><a href="https://wa.me/593992931896" target="_blank">Telefono: +593 99 293 1896</a></li>
+                <li><a href="mailto:hostalcapital2020@gmail.com" target="_blank">Gmail</a></li>
+                <li><a href="https://maps.app.goo.gl/UTFNjvhcRkLSxYrb7" target="_blank">Ubicacion</a></li>
+            </ul>
+        </div>
+
+        <!--Informacion de copyright-->
+        <div>
+            <p>Pagina creada por Developers</p>
+            <p>copyright©</p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
