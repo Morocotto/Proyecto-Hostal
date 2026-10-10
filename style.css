@@ -18,6 +18,7 @@ body {
 
 /*con un id hicimos que los links superiores fueran al centro de la pantalla*/
 .linkcenter {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,4 +29,19 @@ body {
 p ,ul,li{
     font-family: 'jost', cursive; 
     font-size: 15px;
+}
+
+/*Le asignamos color y fondo a los links de toda la pagina y quitamos decoracion*/
+a{
+    text-decoration: none;
+    font-family: quicksand ;
+}
+a:link{
+    color: #3A5A40;
+}
+a:visited{
+    color: #4A5D4E;
+}
+a:hover{
+    color: #E89C31;
 }
