@@ -1,0 +1,31 @@
+/*Importamos fuente para el logo*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.google.com/specimen/Jost?query=jost');
+
+/*Le asignamos una clase al h1 del titulo para centrar, dar estilos y colores*/
+#hostal {
+    color: #E89C31;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 75px;
+    background-color: #FFF9E6;
+}
+
+/*le asignamos un color de fondo global al body*/
+body {
+    background-color: #FDFBF7;
+}
+
+/*con un id hicimos que los links superiores fueran al centro de la pantalla*/
+.linkcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Le asignamos un tamaño y fuente a los parrafos y listas*/
+p ,ul,li{
+    font-family: 'jost', cursive; 
+    font-size: 15px;
+}
