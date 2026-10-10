@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.google.com/specimen/Jost?query=jost');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /*Le asignamos una clase al h1 del titulo para centrar, dar estilos y colores*/
 #hostal {
     color: #E89C31;
@@ -9,11 +16,14 @@
     text-align: center;
     font-size: 75px;
     background-color: #FFF9E6;
+    padding: 3rem 2rem;
 }
 
 /*le asignamos un color de fondo global al body*/
 body {
-    background-color: #FDFBF7;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F5;
 }
 
 /*con un id hicimos que los links superiores fueran al centro de la pantalla*/
@@ -26,22 +36,141 @@ body {
 }
 
 /*Le asignamos un tamaño y fuente a los parrafos y listas*/
-p ,ul,li{
-    font-family: 'jost', cursive; 
+p,ul,li {
+    font-family: 'jost', cursive;
     font-size: 15px;
 }
 
 /*Le asignamos color y fondo a los links de toda la pagina y quitamos decoracion*/
-a{
+a {
     text-decoration: none;
-    font-family: quicksand ;
+    font-family: quicksand;
 }
-a:link{
+
+a:link {
     color: #3A5A40;
 }
-a:visited{
+
+a:visited {
     color: #4A5D4E;
 }
-a:hover{
+
+a:hover {
     color: #E89C31;
 }
+
+
+/*Diseño de la tabla con el formulario*/
+table {
+    
+
+    margin: 70px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cambiando dimenciones y colores al thead y th*/
+thead, th {
+    background-color: #E89C31;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+/* Cambiando dimenciones y colores al tbody y td*/
+tbody, td{
+    padding: 15px 20px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Cambiando dimenciones al label*/
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #4A5D4E;
+    font-weight: 600;
+    font-size: 14;
+}
+
+/* Cambiando dimenciones y colores al input y texarea*/
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    color: #2f3640;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Cambiando dimenciones y color al boton de enviar*/
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #E89C31;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0px 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+/* Cambiando color de fondo al boton de enviar*/
+button:hover {
+    background-color: #E89C31;
+}
+
+/* Cambiando escalado al momento de interactuar con el boton*/
+button:active {
+    transform: scale(0.98);
+}
+
+/*le da margen al div*/
+#referencia {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/*alinea y cambia el tamaño de las imagenes*/
+#referencia img {
+  width: 280px;
+  height: auto;
+  margin: 10px 15px;
+  display: inline-block;
+  box-shadow: 3px 5px 3px #2f3640;
+}
+
+/*Imagen de fondo para la leyenda del inicio*/
+#bienvenida {
+    background-color: #2f3640;
+    color: white;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-fachada/Fachada_1.jpg');
+    height: 500px;
+    text-align: center;
+    font-size: 75px;
+}
+
+/*Alinear los h2*/
+h2 {
+    text-align: center;
+}
+
+
