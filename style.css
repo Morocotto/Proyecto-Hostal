@@ -1,6 +1,6 @@
 /*Importamos fuente para el logo*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.google.com/specimen/Source+Sans+3');
+@import url('https://fonts.google.com/specimen/Edu+QLD+Hand?preview.script=Latn');
 
 * {
     margin: 0;
@@ -9,15 +9,72 @@
 }
 
 
-/*Le asignamos una clase al h1 del titulo para centrar, dar estilos y colores*/
+/* Encabezado que permanece arriba al hacer scroll */
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFF9E6;
+    padding: 15px 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Título del hostal */
 #hostal {
+    margin: 0;
+    font-size: 500%;
     color: #E89C31;
     font-family: 'Great Vibes', cursive;
-    text-align: center;
-    font-size: 75px;
-    background-color: #FFF9E6;
-    padding: 3rem 2rem;
 }
+
+/* Enlaces uno al lado del otro */
+.linkcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo de los enlaces */
+.linkcenter a {
+    text-decoration: none;
+    color:  #3A5A40;
+    font-size: 150%;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.linkcenter a:hover {
+    color: #F89C31;
+}
+
+/* Enlaces uno al lado del otro */
+.linkcenter2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Estilo de los enlaces */
+.linkcenter2 a {
+    text-decoration: none;
+    color:  #3A5A40;
+    font-size: 100%;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.linkcenter2 a:hover {
+    color: #F89C31;
+}
+
 
 /*le asignamos un color de fondo global al body*/
 body {
@@ -26,39 +83,15 @@ body {
     background-color: #FAF8F5;
 }
 
-/*con un id hicimos que los links superiores fueran al centro de la pantalla*/
-.linkcenter {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    
-}
 
 /*Le asignamos un tamaño y fuente a los parrafos y listas*/
-p,ul,li {
-    font-family: "Source Sans 3", sans-serif;
+p,
+ul,
+li {
+     font-family: "Edu QLD Hand", cursive;
     font-size: 15px;
 }
 
-/*Le asignamos color y fondo a los links de toda la pagina y quitamos decoracion*/
-a {
-    text-decoration: none;
-    font-family: quicksand;
-}
-
-a:link {
-    color: #3A5A40;
-}
-
-a:visited {
-    color: #4A5D4E;
-}
-
-a:hover {
-    color: #E89C31;
-}
 
 
 /*Diseño de la tabla con el formulario*/
@@ -77,8 +110,7 @@ table {
 }
 
 /* Cambiando dimenciones y colores al thead y th*/
-thead,
-th {
+thead,th {
     background-color: #E89C31;
     color: #ffffff;
     padding: 20px;
@@ -151,6 +183,7 @@ button:active {
     text-align: center;
     width: 100%;
     margin-bottom: 25px;
+
 }
 
 /*alinea y cambia el tamaño de las imagenes*/
@@ -160,6 +193,7 @@ button:active {
     margin: 10px 15px;
     display: inline-block;
     box-shadow: 3px 5px 3px #2f3640;
+    border-radius: 15%;
 }
 
 /*Imagen de fondo para la leyenda del inicio*/
@@ -187,18 +221,100 @@ h2 {
     font-size: 35px;
 }
 
+/*Clase de descripcion, fondo, color y fuente a las letras y titulo de la descripcion*/
 .Descripcion {
     text-align: center;
     background-color: #F5EBD7;
     color: #4A5D4E;
 }
 
+/*modificacion del h3 color y fuente*/
 .Descripcion h3 {
     color: #E89C31;
     font-family: 'Great Vibes', cursive;
     font-size: 35px;
-}   
+}
 
+/*modificacion del parrafo tamaño de fuente*/
 .Descripcion p {
     font-size: 20px;
+}
+
+/* Estilos del footer corregidos */
+.pie {
+    background-color: #F0ECE1;
+    padding: 30px 40px 20px; /* Más espacio arriba para bajar los elementos */
+    font-family: sans-serif;
+    color: #333;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+/* Alineación horizontal perfecta */
+.pie-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente para que NO quede chueco */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Foto/Logo centrada verticalmente y desplazada hacia abajo */
+.pie-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Desplaza el logo hacia abajo */
+}
+
+.pie-logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Menú central con texto Verde Pistacho */
+.pie-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.pie-links a {
+    color: #708238; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.pie-links a:hover {
+    color: #556b2f; /* Verde un poco más oscuro al pasar el mouse */
+}
+
+/* Contacto a la derecha perfectamente alineado */
+.pie-contacto {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pie-contacto a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Texto inferior centrado */
+.pie-copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+.pie-copyright p {
+    margin: 4px 0;
 }

@@ -11,15 +11,15 @@
 <body>
 
     <!--Encabezado de inicio, nombre y links a otras pestañas de la pagina-->
-    <div>
+    <header class="encabezado">
         <h1 id="hostal">Hostal Capital</h1>
 
-        <div class="linkcenter">
+        <nav class="linkcenter">
             <a href="pagina-habitaciones/habitaciones.html">Habitaciones</a>
             <a href="pagina-servicios/servicios.html">Servicios</a>
-            <a href="pagina-politicas/politicas.html">Politicas del Hostal</a>
-        </div>
-    </div>
+            <a href="pagina-politicas/politicas.html">Políticas del Hostal</a>
+        </nav>
+    </header>
 
     <!--Imagen y palabra de bienvenida-->
     <br>
@@ -37,9 +37,10 @@
         <p>Llevamos muchos años abriendo nuestras puertas con el mismo entusiasmo del primer día. Nos hemos convertido
             en un punto de encuentro para quienes buscan un lugar tranquilo, seguro y limpio donde descansar en su paso
             por la ciudad.
-
-            No somos un hotel de lujos, pero sí nos esmeramos cada día por ofrecerte un servicio honesto y de buena
-            calidad. Creemos que lo más importante es hacerte sentir como en casa.</p>
+            <br>
+            No somos un hostal de lujos, pero sí nos esmeramos cada día por ofrecerte un servicio honesto y de buena
+            calidad. Creemos que lo más importante es hacerte sentir como en casa.
+        </p>
     </div>
 
     <!--Fachada del hostal-->
@@ -58,65 +59,18 @@
 
 
     <!--Div para la mencion de ofertas-->
-    <div>
+    <div class="Descripcion ">
         <p>Contactanos en WhatsApps para conocer nuestras promociones al reservar nuestras habitaciones. Para más
             detalle dirijase nuestra pestaña "Habitaciones"</p>
     </div>
 
 
-    <!-- Div para el formulario -->
-    <div>
-        <!-- La etiqueta form debe envolver los campos -->
-        <form action="#" method="POST">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <!-- El encabezado va dentro de un tr -->
-                        <th colspan="2">Formulario de Contacto</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <!-- tr envuelve a td -->
-                        <td colspan="2">
-                            <label for="Nombres">Nombres y Apellidos</label><br>
-                            <input type="text" id="Nombres" name="nombres">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <label for="Telefono">Teléfono</label><br>
-                            <input type="tel" id="Telefono" name="telefono">
-                        </td>
-                        <td>
-                            <label for="Email">Email</label><br>
-                            <input type="email" id="Email" name="email">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">
-                            <label for="mensaje">Escribe tu mensaje:</label><br>
-                            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">
-                            <button type="submit">Enviar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>
 
     <hr>
     <!--Div para las preguntas frecuentes del Hostal con sus respuestas-->
     <div>
 
+        <br>
         <h2>Preguntas Frecuentes</h2>
 
         <h4>¿El desayuno está incluido en la tarifa?</h4>
@@ -141,45 +95,74 @@
 
     </div>
 
-    <!--Footer, contenedor de pie de pagina-->
-    <footer>
+    <!-- Div para el formulario -->
+    <div>
+        <!-- La etiqueta form debe envolver los campos -->
+        <form action="#" method="POST">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <!-- El encabezado va dentro de un tr -->
+                        <th colspan="2">Formulario de Preguntas</th>
+                    </tr>
+                </thead>
 
-        <br>
-        <!--Div para la imagen-->
-        <div>
-            <img src="img-fachada/Logo.jpeg" alt="Logo del Hostal Capital" height="100" width="100">
+                <tbody>
+
+                    <td>
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="Email" name="email">
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="mensaje">Escribe tu mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+<!-- Footer, contenedor de pie de pagina -->
+<footer class="pie">
+    <div class="pie-contenido">
+        <!-- 1. Logo a la izquierda -->
+        <div class="pie-logo">
+            <img src="img-fachada/Logo.jpeg" alt="Logo del Hostal Capital" height="50">
         </div>
 
-        <!--Div para la frase del Hostal-->
-        <div>
-            <p>Un lugar sencillo para descansar, sentirse cómodo y estar como en casa.</p>
-        </div>
-
-        <!--Div para los links-->
-        <div>
+        <!-- 2. Enlaces principales en el centro -->
+        <nav class="pie-links">
             <a href="index.html">Inicio</a>
             <a href="pagina-habitaciones/habitaciones.html">Habitaciones</a>
             <a href="pagina-servicios/servicios.html">Servicios</a>
-            <a href="pagina-politicas/politicas.html">Politicas del Hostal</a>
-        </div>
+            <a href="pagina-politicas/politicas.html">Políticas del Hostal</a>
+        </nav>
 
-        <!--Div para links de informcion de contacto-->
-        <div>
-            <ul>
-                <li><a href="https://wa.me/593992931896">Telefono: +593 99 293 1896</a></li>
-                <li><a href="mailto:hostalcapital2020@gmail.com">Gmail</a></li>
-                <li><a href="https://maps.app.goo.gl/UTFNjvhcRkLSxYrb7">Ubicacion</a></li>
-                <li><a href="https://www.facebook.com/hostalcapitalquito?mibextid=rS40aB7S9Ucbxw6v">Facebook</a></li>
-            </ul>
+        <!-- 3. Redes y contacto a la derecha -->
+        <div class="pie-contacto">
+            <a href="https://wa.me/593992931896" title="Teléfono">Teléfono</a>
+            <a href="mailto:hostalcapital2020@gmail.com" title="Correo">Gmail</a>
+            <a href="https://maps.app.goo.gl/UTFNjvhcRkLSxYrb7" title="Ubicación">Ubicación</a>
+            <a href="https://www.facebook.com/hostalcapitalquito?mibextid=rS40aB7S9Ucbxw6v" title="Facebook">Facebook</a>
         </div>
+    </div>
 
-        <!--Informacion de copyright-->
-        <div>
-            <p>Pagina creada por Developers</p>
-            <p>copyright©</p>
-        </div>
-
-    </footer>
+    <!-- 4. Texto legal/copyright en la parte inferior -->
+    <div class="pie-copyright">
+        <p>Un lugar sencillo para descansar, sentirse cómodo y estar como en casa.</p>
+        <p>Página creada por Developers — Copyright ©</p>
+    </div>
+</footer>
 
 </body>
 
