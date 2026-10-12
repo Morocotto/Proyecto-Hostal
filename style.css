@@ -3,9 +3,9 @@
 @import url('https://fonts.google.com/specimen/Jost?query=jost');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -36,7 +36,9 @@ body {
 }
 
 /*Le asignamos un tamaño y fuente a los parrafos y listas*/
-p,ul,li {
+p,
+ul,
+li {
     font-family: 'jost', cursive;
     font-size: 15px;
 }
@@ -62,7 +64,7 @@ a:hover {
 
 /*Diseño de la tabla con el formulario*/
 table {
-    
+
 
     margin: 70px auto;
     border-collapse: separate;
@@ -76,7 +78,8 @@ table {
 }
 
 /* Cambiando dimenciones y colores al thead y th*/
-thead, th {
+thead,
+th {
     background-color: #E89C31;
     color: #ffffff;
     padding: 20px;
@@ -84,11 +87,12 @@ thead, th {
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
-    
+
 }
 
 /* Cambiando dimenciones y colores al tbody y td*/
-tbody, td{
+tbody,
+td {
     padding: 15px 20px;
     border: none;
     background-color: transparent;
@@ -104,7 +108,8 @@ label {
 }
 
 /* Cambiando dimenciones y colores al input y texarea*/
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #dcdde1;
@@ -144,33 +149,41 @@ button:active {
 
 /*le da margen al div*/
 #referencia {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 /*alinea y cambia el tamaño de las imagenes*/
 #referencia img {
-  width: 280px;
-  height: auto;
-  margin: 10px 15px;
-  display: inline-block;
-  box-shadow: 3px 5px 3px #2f3640;
+    width: 280px;
+    height: auto;
+    margin: 10px 15px;
+    display: inline-block;
+    box-shadow: 3px 5px 3px #2f3640;
 }
 
 /*Imagen de fondo para la leyenda del inicio*/
 #bienvenida {
     background-color: #2f3640;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-fachada/Fachada_1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-fachada/Fachada_1.jpg');
     height: 500px;
     text-align: center;
     font-size: 75px;
+    border-image-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/*Alinear los h2*/
+#bienvenida p {
+    font-size: 45px;
+}
+
+/*Alinear los h2 darle color y fuente*/
 h2 {
+    color: #E89C31;
     text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
 }
-
-
