@@ -318,3 +318,68 @@ h2 {
 .pie-copyright p {
     margin: 4px 0;
 }
+
+/* Contenedor de preguntas frecuentes */
+.contenedor-faq {
+    padding: 30px 20px;
+    background-color: #FAF8F5;
+}
+
+/* Título de preguntas frecuentes */
+.contenedor-faq h2 {
+    color: #E89C31;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* Diseño de la tabla */
+.tabla-faq {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezado naranja */
+.tabla-faq thead th {
+    background-color: #E89C31;
+    color: #FFFFFF;
+    padding: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Celdas de la tabla */
+.tabla-faq tbody td {
+    padding: 18px;
+    border-bottom: 1px solid #E8DFD0;
+    background-color: #FFFFFF;
+    color: #4A5D4E;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Columna de preguntas */
+.tabla-faq tbody td:first-child {
+    background-color: #F5EBD7;
+    width: 40%;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+.tabla-faq tbody tr:hover td {
+    background-color: #FFF3DC;
+}
+
+/* Quitar el borde inferior de la última fila */
+.tabla-faq tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
