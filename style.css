@@ -8,24 +8,24 @@
     box-sizing: border-box;
 }
 
-
 /* Encabezado que permanece arriba al hacer scroll */
 .encabezado {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #FFF9E6;
-    padding: 15px 2rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 /* Título del hostal */
 #hostal {
     margin: 0;
-    font-size: 500%;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     color: #E89C31;
     font-family: 'Great Vibes', cursive;
 }
@@ -36,14 +36,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 /* Estilo de los enlaces */
 .linkcenter a {
     text-decoration: none;
     color:  #3A5A40;
-    font-size: 150%;
+    font-size: 1.25rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -58,15 +59,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
-
 
 /* Estilo de los enlaces */
 .linkcenter2 a {
     text-decoration: none;
     color:  #3A5A40;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -75,7 +76,6 @@
     color: #F89C31;
 }
 
-
 /*le asignamos un color de fondo global al body*/
 body {
     margin: 0;
@@ -83,48 +83,42 @@ body {
     background-color: #FAF8F5;
 }
 
-
 /*Le asignamos un tamaño y fuente a los parrafos y listas*/
-p,
-ul,
-li {
-     font-family: "Edu QLD Hand", cursive;
-    font-size: 15px;
+p, ul, li {
+    font-family: "Edu QLD Hand", cursive;
+    font-size: 0.9375rem;
 }
-
-
 
 /*Diseño de la tabla con el formulario*/
 table {
-
-
-    margin: 70px auto;
+    width: 90%;
+    max-width: 600px;
+    margin: 4.375rem auto;
     border-collapse: separate;
     border-spacing: 0;
     background-color: #ffffff;
     border: none;
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 0.75rem;
+    box-shadow: 0px 0.625rem 1.5625rem rgba(0, 0, 0, 0.08);
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Cambiando dimenciones y colores al thead y th*/
-thead,th {
+thead, th {
     background-color: #E89C31;
     color: #ffffff;
-    padding: 20px;
-    font-size: 20px;
+    padding: 1.25rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
-
 }
 
 /* Cambiando dimenciones y colores al tbody y td*/
 tbody,
 td {
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem;
     border: none;
     background-color: transparent;
 }
@@ -132,21 +126,21 @@ td {
 /* Cambiando dimenciones al label*/
 label {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
     color: #4A5D4E;
     font-weight: 600;
-    font-size: 14;
+    font-size: 0.875rem;
 }
 
 /* Cambiando dimenciones y colores al input y texarea*/
 input,
 textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 0.75rem 0.9375rem;
     border: 1px solid #dcdde1;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #f8f9fa;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #2f3640;
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -156,16 +150,16 @@ textarea {
 button {
     display: block;
     width: 100%;
-    padding: 14px;
+    padding: 0.875rem;
     background-color: #E89C31;
     color: #ffffff;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    box-shadow: 0px 4px 6px rgba(52, 152, 219, 0.2);
+    box-shadow: 0px 0.25rem 0.375rem rgba(52, 152, 219, 0.2);
 }
 
 /* Cambiando color de fondo al boton de enviar*/
@@ -182,17 +176,17 @@ button:active {
 #referencia {
     text-align: center;
     width: 100%;
-    margin-bottom: 25px;
-
+    margin-bottom: 1.5625rem;
 }
 
 /*alinea y cambia el tamaño de las imagenes*/
 #referencia img {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: auto;
-    margin: 10px 15px;
+    margin: 0.625rem;
     display: inline-block;
-    box-shadow: 3px 5px 3px #2f3640;
+    box-shadow: 0.1875rem 0.3125rem 0.1875rem #2f3640;
     border-radius: 15%;
 }
 
@@ -201,16 +195,21 @@ button:active {
     background-color: #2f3640;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-fachada/Fachada_1.jpg');
-    height: 600px;
+    min-height: 50vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 75px;
+    font-size: clamp(2.5rem, 8vw, 4.6875rem);
     border-image-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #bienvenida p {
-    font-size: 45px;
+    font-size: clamp(1.5rem, 4vw, 2.8125rem);
 }
 
 /*Alinear los h2 darle color y fuente*/
@@ -218,32 +217,33 @@ h2 {
     color: #E89C31;
     text-align: center;
     font-family: 'Great Vibes', cursive;
-    font-size: 35px;
+    font-size: clamp(1.8rem, 4vw, 2.1875rem);
 }
 
 /*Clase de descripcion, fondo, color y fuente a las letras y titulo de la descripcion*/
 .Descripcion {
     text-align: center;
     background-color: #F5EBD7;
-    color: #4A5D4E;
+    color: #223927;
+    padding: 1.5rem 1rem;
 }
 
 /*modificacion del h3 color y fuente*/
 .Descripcion h3 {
     color: #E89C31;
     font-family: 'Great Vibes', cursive;
-    font-size: 35px;
+    font-size: clamp(1.8rem, 4vw, 2.1875rem);
 }
 
 /*modificacion del parrafo tamaño de fuente*/
 .Descripcion p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Estilos del footer corregidos */
 .pie {
     background-color: #F0ECE1;
-    padding: 30px 40px 20px; /* Más espacio arriba para bajar los elementos */
+    padding: 1.875rem 1.25rem 1.25rem; /* Más espacio arriba para bajar los elementos */
     font-family: sans-serif;
     color: #333;
     border-top: 1px solid #e5e5e5;
@@ -255,21 +255,23 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Alinea verticalmente para que NO quede chueco */
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
-    gap: 20px;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 /* Foto/Logo centrada verticalmente y desplazada hacia abajo */
 .pie-logo {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Desplaza el logo hacia abajo */
+    margin-top: 0.625rem; /* Desplaza el logo hacia abajo */
 }
 
 .pie-logo img {
-    height: 150px;
+    height: 9.375rem;
     width: auto;
+    max-width: 100%;
     display: block;
     border-radius: 50%;
 }
@@ -277,14 +279,16 @@ h2 {
 /* Menú central con texto Verde Pistacho */
 .pie-links {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pie-links a {
     color: #708238; 
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     transition: color 0.2s ease;
 }
@@ -296,32 +300,36 @@ h2 {
 /* Contacto a la derecha perfectamente alineado */
 .pie-contacto {
     display: flex;
-    gap: 10px;
+    gap: 0.875rem;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pie-contacto a {
     color: #2c3e50;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 500;
 }
 
 /* Texto inferior centrado */
 .pie-copyright {
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #666;
     border-top: 1px solid #eee;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .pie-copyright p {
-    margin: 4px 0;
+    margin: 0.25rem 0;
 }
 
 /* Contenedor de preguntas frecuentes */
 .contenedor-faq {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     background-color: #FAF8F5;
 }
 
@@ -330,38 +338,38 @@ h2 {
     color: #E89C31;
     text-align: center;
     font-family: 'Great Vibes', cursive;
-    font-size: 40px;
-    margin-bottom: 25px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 1.5625rem;
 }
 
 /* Diseño de la tabla */
 .tabla-faq {
     width: 90%;
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.08);
 }
 
 /* Encabezado naranja */
 .tabla-faq thead th {
     background-color: #E89C31;
     color: #FFFFFF;
-    padding: 18px;
-    font-size: 18px;
+    padding: 1.125rem;
+    font-size: 1.125rem;
     text-align: center;
 }
 
 /* Celdas de la tabla */
 .tabla-faq tbody td {
-    padding: 18px;
+    padding: 1.125rem;
     border-bottom: 1px solid #E8DFD0;
     background-color: #FFFFFF;
     color: #4A5D4E;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.6;
 }
 
@@ -382,4 +390,121 @@ h2 {
     border-bottom: none;
 }
 
+/*--------------------MODIFICACION PG HABITACIONES-------------------*/
 
+/*imagen de fondo para el titulo de la pestaña*/
+#background-habitacion {
+    background-color: #2f3640;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-servicios/servicio\ 2.png');
+    min-height: 300px;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(2.5rem, 6vw, 4.6875rem);
+    border-image-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Estilo de los titulos de las habitaciones*/
+.habitaciones {
+    color: #E89C31;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5625rem;
+}
+
+.img-habitacion {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.5rem 0.9375rem #2f3640;
+}
+
+.div-habitacion ul li {
+   text-align: center;
+}
+
+.div-habitacion img {
+    margin: 0 auto;
+    display: block;
+}
+
+.ul-background {
+    background-color: #FFF9E6;
+    text-align: center;
+    padding: 1rem;
+}
+
+.li-habitacion {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #3A5A40;
+}
+
+.img-servicio {
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.25rem 1.5rem lightgray;
+    margin: 0 auto;
+    display: block;
+}
+
+.linkcenter-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+/* Estilo de los enlaces */
+.linkcenter-contacto a {
+    text-decoration: none;
+    color:  #c68438;
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.linkcenter-contacto a:hover {
+    color: #3A5A40;
+}
+
+/*  MEDIA QUERIES (Adaptabilidad Móvil/Tablet)  */
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pie-contenido {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .tabla-faq,
+    .tabla-faq thead,
+    .tabla-faq tbody,
+    .tabla-faq th,
+    .tabla-faq td,
+    .tabla-faq tr {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-faq tbody td:first-child {
+        width: 100%;
+    }
+}
