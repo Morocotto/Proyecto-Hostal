@@ -50,13 +50,28 @@
     <div>
         <br>
         <h2>Imagenes referenciales</h2>
-        <div id="referencia">
-            <img src="img-fachada/Fachada_1.jpg" alt="Imagen de la fachada 1 del hostal capital" width="700"
+        
+        <div class="referencia">
+
+            <div class="carrusel">
+
+            <div class="slide">
+                <img src="img-fachada/Fachada_1.jpg" alt="Imagen de la fachada 1 del hostal capital" width="700"
                 height="500">
-            <img src="img-fachada/Fachada_2.jpg" alt="Imagen de la fachada 2 del hostal capital" width="700"
+            </div>  
+
+            <div class="slide">
+                <img src="img-fachada/Fachada_2.jpg" alt="Imagen de la fachada 2 del hostal capital" width="700"
                 height="500">
-            <img src="img-fachada/Fachada_3.jpg" alt="Imagen de la fachada 3 del hostal capital" width="700"
+            </div>
+            
+            <div class="slide">
+                <img src="img-fachada/Fachada_3.jpg" alt="Imagen de la fachada 3 del hostal capital" width="700"
                 height="500">
+            </div>
+
+             </div>
+
         </div>
     </div>
 
@@ -105,7 +120,7 @@
     <!-- Div para el formulario -->
     <div>
         <!-- La etiqueta form debe envolver los campos -->
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="formulario">
             <table border="1">
                 <thead>
                     <tr>
@@ -130,7 +145,7 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" id="envio">
                             <button type="submit">Enviar</button>
                         </td>
                     </tr>
