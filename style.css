@@ -177,7 +177,7 @@ button:active {
     width: 100%;
     margin-bottom: 1.5625rem;
     max-width: 50rem;
-    height: 14rem;
+    height: 16rem;
     margin: 0 auto;
     border-radius: 0.625rem;
 }
@@ -187,7 +187,7 @@ button:active {
     display: flex;
     width: 300%;
     height: 100%;
-    animation: carrusel-anim 11s infinite ease-in-out;
+    animation: carrusel-anim 10s infinite ease-in-out;
 }
 
 /*Contenedor individual para cada imagen*/
@@ -205,15 +205,15 @@ button:active {
 
 /*Define los movimientos de desplazamiento durante 9 segundos*/
 @keyframes carrusel-anim {
-    0%,25% {transform: translateX(10.60%);}
-    33%,58% {transform: translateX(-23%);}
-    66%,91% {transform: translateX(-56%);}
+    0%,25% {transform: translateX(9.60%);}
+    33%,58% {transform: translateX(-24.25%);}
+    66%,91% {transform: translateX(-57%);}
 }
 
 /*alinea y cambia el tamaño de las imagenes*/
 .referencia img {
-    width: 100%;
-    max-width: 280px;
+    width: 200%;
+    max-width: 20.5rem;
     height: auto;
     margin: 0.625rem;
     display: inline-block;
