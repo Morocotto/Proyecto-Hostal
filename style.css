@@ -1,6 +1,6 @@
 /*Importamos fuente para el logo*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.google.com/specimen/Edu+QLD+Hand?preview.script=Latn');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
 
 * {
     margin: 0;
@@ -19,7 +19,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.25rem;
-    flex-wrap: wrap;
 }
 
 /* Título del hostal */
@@ -27,7 +26,7 @@
     margin: 0;
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     color: #E89C31;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', 'Times New Roman', cursive;
 }
 
 /* Enlaces uno al lado del otro */
@@ -53,46 +52,21 @@
     color: #F89C31;
 }
 
-/* Enlaces uno al lado del otro */
-.linkcenter2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-}
-
-/* Estilo de los enlaces */
-.linkcenter2 a {
-    text-decoration: none;
-    color:  #3A5A40;
-    font-size: 1rem;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.linkcenter2 a:hover {
-    color: #F89C31;
-}
-
 /*le asignamos un color de fondo global al body*/
 body {
-    margin: 0;
-    padding: 0;
     background-color: #FAF8F5;
 }
 
 /*Le asignamos un tamaño y fuente a los parrafos y listas*/
 p, ul, li {
-    font-family: "Edu QLD Hand", cursive;
+    font-family: "Edu QLD Hand",'Times New Roman', cursive;
     font-size: 0.9375rem;
 }
 
 /*Diseño de la tabla con el formulario*/
 table {
     width: 90%;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 4.375rem auto;
     border-collapse: separate;
     border-spacing: 0;
@@ -112,7 +86,7 @@ thead, th {
     font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
 }
 
 /* Cambiando dimenciones y colores al tbody y td*/
@@ -159,12 +133,11 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    box-shadow: 0px 0.25rem 0.375rem rgba(52, 152, 219, 0.2);
 }
 
 /* Cambiando color de fondo al boton de enviar*/
 button:hover {
-    background-color: #E89C31;
+    background-color: #000000;
 }
 
 /* Cambiando escalado al momento de interactuar con el boton*/
@@ -172,53 +145,47 @@ button:active {
     transform: scale(0.98);
 }
 
-/*le da margen al div, espacio para darle la animacion*/
+/* Contenedor principal que centra y limita el tamaño del carrusel */
 .referencia {
-    width: 100%;
-    margin-bottom: 1.5625rem;
-    max-width: 50rem;
+    width: 90%;
+    max-width: 40rem;
     height: 16rem;
-    margin: 0 auto;
-    border-radius: 0.625rem;
+    margin: 1.5rem auto;
+    border-radius: 0.75rem;
+    overflow: hidden; /* Oculta lo que está fuera de la vista */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
-/*Contenedor que sostiene las imagenes y las mueve de un lado al otro*/
+/* Contenedor flexible de 300% para acomodar las 3 imágenes en fila horizontal */
 .carrusel {
     display: flex;
     width: 300%;
     height: 100%;
-    animation: carrusel-anim 10s infinite ease-in-out;
+    animation: carrusel-anim 12s infinite ease-in-out;
 }
 
-/*Contenedor individual para cada imagen*/
-.slide{
-    width: 33.33%;
+/* Cada slide individual ocupa exactamente un tercio del carrusel (el 100% visible de la pantalla) */
+.slide {
+    width: 33.3333%;
     height: 100%;
+    flex-shrink: 0;
 }
 
-/*Aplica los estilos a las imagenes*/
+/* Las imágenes se adaptan perfectamente al tamaño del slide sin deformarse */
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-/*Define los movimientos de desplazamiento durante 9 segundos*/
+/* Animación fluida para mostrar cada imagen de forma individual */
 @keyframes carrusel-anim {
-    0%,25% {transform: translateX(9.60%);}
-    33%,58% {transform: translateX(-24.25%);}
-    66%,91% {transform: translateX(-57%);}
-}
-
-/*alinea y cambia el tamaño de las imagenes*/
-.referencia img {
-    width: 200%;
-    max-width: 20.5rem;
-    height: auto;
-    margin: 0.625rem;
-    display: inline-block;
-    box-shadow: 0.1875rem 0.3125rem 0.1875rem #2f3640;
-    border-radius: 15%;
+    0%, 25% {transform: translateX(0%);}
+    33%, 58% {transform: translateX(-33.3333%);}
+    66%, 91% {transform: translateX(-66.6666%);}
+    100% {transform: translateX(0%);}
 }
 
 /*Efectos a las imagenes*/
@@ -228,7 +195,6 @@ button:active {
 
 /*Imagen de fondo para la leyenda del inicio*/
 #bienvenida {
-    background-color: #2f3640;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-fachada/Fachada_1.jpg');
     min-height: 50vh;
@@ -239,7 +205,6 @@ button:active {
     align-items: center;
     text-align: center;
     font-size: clamp(2.5rem, 8vw, 4.6875rem);
-    border-image-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -253,7 +218,7 @@ button:active {
 h2 {
     color: #E89C31;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', 'Times New Roman', cursive;
     font-size: clamp(1.8rem, 4vw, 2.1875rem);
 }
 
@@ -268,7 +233,7 @@ h2 {
 /*modificacion del h3 color y fuente*/
 .Descripcion h3 {
     color: #E89C31;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', 'Times New Roman', cursive;
     font-size: clamp(1.8rem, 4vw, 2.1875rem);
 }
 
@@ -376,7 +341,7 @@ h2 {
 .contenedor-faq h2 {
     color: #E89C31;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', 'Times New Roman', cursive;
     font-size: clamp(2rem, 5vw, 2.5rem);
     margin-bottom: 1.5625rem;
 }
@@ -452,7 +417,7 @@ h2 {
 .habitaciones {
     color: #E89C31;
     text-align: center;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', 'Times New Roman', cursive;
     font-size: 1.5625rem;
 }
 
@@ -499,7 +464,6 @@ h2 {
 
 /*Modificacion img de la pg servicios*/
 .img-servicio {
-    gap: 1.25rem;
     width: 100%;
     max-width: 400px;
     height: auto;
